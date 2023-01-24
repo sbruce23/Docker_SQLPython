@@ -12,7 +12,7 @@ services:
       - "5432:5432"
   pgadmin:
     container_name: pgadmin4_container
-    image: dpage/pgadmin4:6.18
+    image: dpage/pgadmin4:6.19
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
