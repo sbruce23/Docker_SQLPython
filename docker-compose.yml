@@ -27,7 +27,9 @@ services:
     entrypoint:
       - "/bin/sh"
       - "-c"
-      - "/bin/echo 'postgres:5432:*:postgres:behappy' > /tmp/pgpassfile && chmod 600 /tmp/pgpassfile && /entrypoint.sh"  
+      - "/bin/echo 'postgres:5432:*:postgres:behappy' > /tmp/pgpassfile && chmod 600 /tmp/pgpassfile && /entrypoint.sh" 
+    depends_on:
+      - postgres
   pynb:
     container_name: pynb_container
     image: sbruce23/pynb_image:1.1
