@@ -1,4 +1,4 @@
-FROM python:3.12.1-slim
+FROM python:3.11.7-slim
 LABEL maintainer="Scott A. Bruce <sabruce@tamu.edu>"
 LABEL version="1.2"
 LABEL description="Python Jupyter notebook development environment"
