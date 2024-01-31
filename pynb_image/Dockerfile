@@ -14,4 +14,4 @@ RUN pip install numpy==1.26.3  pandas==2.2.0 seaborn==0.13.2 jupyter==1.0.0 scik
 
 WORKDIR /home/notebooks/
 
-CMD ["jupyter","notebook","--ip=0.0.0.0","--port=8888","--no-browser"]
+CMD jupyter notebook --no-browser --allow-root --ip 0.0.0.0
