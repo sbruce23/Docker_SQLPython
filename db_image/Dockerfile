@@ -1,7 +1,7 @@
 # dump build stage
-FROM postgres:15.4 as dumper
+FROM postgres:16.4 as dumper
 LABEL maintainer="Scott A. Bruce <sabruce@tamu.edu>"
-LABEL version="1.1"
+LABEL version="1.3"
 LABEL description="Postgres database for STAT 624"
 
 RUN ["sed", "-i", "s/exec \"$@\"/echo \"skipping...\"/", "/usr/local/bin/docker-entrypoint.sh"]
@@ -18,7 +18,6 @@ RUN chown -R postgres:postgres /docker-entrypoint-initdb.d/
 RUN ["/usr/local/bin/docker-entrypoint.sh", "postgres"]
 
 # final build stage
-FROM postgres:15.4
+FROM postgres:16.4
 
 COPY --from=dumper /data $PGDATA
-
