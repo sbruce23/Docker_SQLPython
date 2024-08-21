@@ -18,7 +18,7 @@ RUN pip install scikit-learn==1.5.1
 RUN pip install SQLAlchemy==2.0.32 
 RUN pip install psycopg2==2.9.9 
 RUN pip install statsmodels==0.14.2 
-RUN pip install dask[complete]==2024.8.1 
+RUN pip install dask[complete]==2024.2.1 
 RUN pip install graphviz==0.20.3 
 RUN pip install dask-ml==2024.4.4
 
