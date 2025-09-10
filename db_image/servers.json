@@ -1,7 +1,7 @@
 {
     "Servers": {
         "1": {
-            "Name": "pg16.4",
+            "Name": "pg17.6",
             "Group": "Servers",
             "Host": "postgres",
             "Port": 5432,
