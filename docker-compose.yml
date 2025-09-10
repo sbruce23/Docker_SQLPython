@@ -31,7 +31,7 @@ services:
       - postgres
   pynb:
     container_name: pynb_container
-    image: sbruce23/pynb_image:1.3
+    image: sbruce23/pynb_image:1.4.amd64
     user: root
     restart: always
     volumes:
