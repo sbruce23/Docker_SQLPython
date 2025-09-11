@@ -1,7 +1,7 @@
 services:
   postgres:
     container_name: pg_container
-    image: sbruce23/db_image:1.4.amd64
+    image: sbruce23/db_image:1.4
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -31,7 +31,7 @@ services:
       - postgres
   pynb:
     container_name: pynb_container
-    image: sbruce23/pynb_image:1.4.amd64
+    image: sbruce23/pynb_image:1.4
     user: root
     restart: always
     volumes:
